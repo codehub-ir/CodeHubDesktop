@@ -1,0 +1,74 @@
+﻿<hc:Window x:Class="CodeHubDesktop.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:hc="https://handyorg.github.io/handycontrol"
+        xmlns:prism="http://prismlibrary.com/" 
+        xmlns:ui="http://schemas.modernwpf.com/2019" 
+        xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
+        prism:ViewModelLocator.AutoWireViewModel="True"
+        xmlns:lang="clr-namespace:CodeHubDesktop.Language"
+        xmlns:ext="clr-namespace:CodeHubDesktop.DynamicLanguage"
+        xmlns:userControl="clr-namespace:CodeHubDesktop.Views"
+        ext:Translation.ResourceManager="{x:Static lang:Lang.ResourceManager}"
+        mc:Ignorable="d"
+        Title="{Binding Title}" 
+        WindowStartupLocation="CenterScreen"
+        ShowTitle="True"
+        FontFamily="{StaticResource IRANSans}"
+        Height="450" 
+        Width="800">
+    <hc:Window.NonClientAreaContent>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button HorizontalAlignment="Right" Grid.Column="1" Click="ButtonConfig_OnClick" Name="ButtonConfig" Style="{StaticResource ButtonIcon}" Foreground="{DynamicResource PrimaryTextBrush}" hc:IconElement.Geometry="{StaticResource ConfigGeometry}"/>
+            <Popup AllowsTransparency="True" Grid.Column="1" PlacementTarget="{Binding ElementName=ButtonConfig}" HorizontalOffset="-25" Name="PopupConfig" VerticalOffset="6" StaysOpen="False">
+                <Border Background="{DynamicResource SecondaryRegionBrush}" CornerRadius="4" Margin="16" Effect="{StaticResource EffectShadow2}">
+                    <StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <StackPanel Button.Click="ButtonLangs_OnClick" Margin="10,10,0,10">
+                                <Button Tag="fa-IR" Style="{StaticResource ButtonCustom}">
+                                    <Image Width="32" Source="/CodeHubDesktop;component/Resources/Img/Flag/fa.png"/>
+                                </Button>
+                                <Button Tag="en-US" Style="{StaticResource ButtonCustom}" Margin="0,10,0,0">
+                                    <Image Width="32" Source="/CodeHubDesktop;component/Resources/Img/Flag/en.png"/>
+                                </Button>
+                            </StackPanel>
+                            <StackPanel Button.Click="ButtonSkins_OnClick"  Margin="10,10,10,10">
+                                <Button Tag="{x:Static hc:SkinType.Default}" Style="{StaticResource ButtonCustom}">
+                                    <Border Background="White" Width="32" Height="21" CornerRadius="2" BorderThickness="1" BorderBrush="{DynamicResource BorderBrush}"/>
+                                </Button>
+                                <Button Tag="{x:Static hc:SkinType.Dark}" Style="{StaticResource ButtonCustom}" Margin="0,10,0,0">
+                                    <Border Background="Black" Width="32" Height="21" CornerRadius="2" BorderThickness="1" BorderBrush="{DynamicResource BorderBrush}"/>
+                                </Button>
+                                <Button Tag="{x:Static hc:SkinType.Violet}" Style="{StaticResource ButtonCustom}" Margin="0,10,0,0">
+                                    <Border Background="DarkViolet" Width="32" Height="21" CornerRadius="2" BorderThickness="1" BorderBrush="{DynamicResource BorderBrush}"/>
+                                </Button>
+                            </StackPanel>
+                        </StackPanel>
+                        <ToggleButton x:Name="tg" Margin="10" Checked="ToggleButton_Checked" Unchecked="ToggleButton_Checked" Style="{StaticResource ToggleButtonSwitch}" Content="{ext:Loc ModernStyle}"/>
+                    </StackPanel>
+                </Border>
+            </Popup>
+        </Grid>
+    </hc:Window.NonClientAreaContent>
+    <Border BorderThickness="0,1,0,0" BorderBrush="{DynamicResource BorderBrush}" Background="{StaticResource CloudDrawingBrush}">
+        <Grid FlowDirection="{Binding MainFlowDirection}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition MinWidth="200"/>
+            </Grid.ColumnDefinitions>
+            <userControl:LeftMainContent x:Name="left"/>
+            <userControl:LeftMainContent2 x:Name="left2"/>
+            <ContentControl prism:RegionManager.RegionName="ContentRegion" Grid.Column="1"/>
+            <GridSplitter Margin="0,26,10,26" Grid.Column="0" HorizontalAlignment="Right" Width="4" Background="Transparent"/>
+            <hc:ScrollViewer Grid.Column="1" VerticalScrollBarVisibility="Hidden" HorizontalAlignment="Right" IsInertiaEnabled="True" IsPenetrating="True">
+                <StackPanel hc:Growl.GrowlParent="True" VerticalAlignment="Top" Margin="0,10,10,10"/>
+            </hc:ScrollViewer>
+        </Grid>
+    </Border>
+</hc:Window>

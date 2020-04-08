@@ -1,0 +1,55 @@
+﻿<UserControl x:Class="CodeHubDesktop.Views.LeftMainContent"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:prism="http://prismlibrary.com/"     
+             xmlns:lang="clr-namespace:CodeHubDesktop.Language"
+             xmlns:ext="clr-namespace:CodeHubDesktop.DynamicLanguage" 
+             xmlns:ui="http://schemas.modernwpf.com/2019" 
+             xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls" 
+             xmlns:hc="https://handyorg.github.io/handycontrol"
+             ext:Translation.ResourceManager="{x:Static lang:Lang.ResourceManager}"
+             prism:ViewModelLocator.AutoWireViewModel="True">
+    <ui:HamburgerMenuEx ItemCommand="{Binding SwitchItemCmd}" OptionsItemCommand="{Binding SwitchItemOptionCmd}" SelectedIndex="1" PaneTitle="{ext:Loc PaneTitle}" IsPaneOpen="True">
+        <mah:HamburgerMenu.ItemsSource>
+            <mah:HamburgerMenuItemCollection>
+                <mah:HamburgerMenuHeaderItem Label="{ext:Loc HamburgerMenuHeaderItem}" />
+
+                <mah:HamburgerMenuIconItem Tag="CreateSnippet" Label="{ext:Loc CreateSnippet}">
+                    <mah:HamburgerMenuIconItem.Icon>
+                        <ui:FontIcon Glyph="&#xE710;" />
+                    </mah:HamburgerMenuIconItem.Icon>
+                </mah:HamburgerMenuIconItem>
+
+                <mah:HamburgerMenuIconItem Tag="SnippetHistory" Label="{ext:Loc SnippetHistory}">
+                    <mah:HamburgerMenuIconItem.Icon>
+                        <ui:FontIcon Glyph="&#xE81C;" />
+                    </mah:HamburgerMenuIconItem.Icon>
+                </mah:HamburgerMenuIconItem>
+
+                <mah:HamburgerMenuIconItem Tag="CheckUpdate" Label="{ext:Loc Update}">
+                    <mah:HamburgerMenuIconItem.Icon>
+                        <ui:SymbolIcon Symbol="PostUpdate" />
+                    </mah:HamburgerMenuIconItem.Icon>
+                </mah:HamburgerMenuIconItem>
+
+                <mah:HamburgerMenuIconItem Tag="About" Label="{ext:Loc About}">
+                    <mah:HamburgerMenuIconItem.Icon>
+                        <ui:SymbolIcon Symbol="Admin" />
+                    </mah:HamburgerMenuIconItem.Icon>
+                </mah:HamburgerMenuIconItem>
+
+            </mah:HamburgerMenuItemCollection>
+        </mah:HamburgerMenu.ItemsSource>
+
+        <mah:HamburgerMenu.OptionsItemsSource>
+            <mah:HamburgerMenuItemCollection>
+                <mah:HamburgerMenuIconItem Tag="Settings" Label="{ext:Loc Settings}">
+                    <mah:HamburgerMenuIconItem.Icon>
+                        <ui:SymbolIcon Symbol="Setting" />
+                    </mah:HamburgerMenuIconItem.Icon>
+                </mah:HamburgerMenuIconItem>
+            </mah:HamburgerMenuItemCollection>
+        </mah:HamburgerMenu.OptionsItemsSource>
+        
+    </ui:HamburgerMenuEx>
+</UserControl>

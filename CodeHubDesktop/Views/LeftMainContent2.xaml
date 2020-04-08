@@ -5,7 +5,7 @@
         xmlns:prism="http://prismlibrary.com/"             
         prism:ViewModelLocator.AutoWireViewModel="True"
         Background="{DynamicResource RegionBrush}"
-        xmlns:lang="clr-namespace:CodeHubDesktop.Language"
+        xmlns:lang="clr-namespace:CodeHubDesktop.MultiLanguage.Language"
         xmlns:ext="clr-namespace:CodeHubDesktop.DynamicLanguage" 
         xmlns:hc="https://handyorg.github.io/handycontrol"
         ext:Translation.ResourceManager="{x:Static lang:Lang.ResourceManager}"

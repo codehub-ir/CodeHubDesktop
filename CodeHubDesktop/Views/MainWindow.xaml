@@ -8,7 +8,7 @@
         xmlns:ui="http://schemas.modernwpf.com/2019" 
         xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
         prism:ViewModelLocator.AutoWireViewModel="True"
-        xmlns:lang="clr-namespace:CodeHubDesktop.Language"
+        xmlns:lang="clr-namespace:CodeHubDesktop.MultiLanguage.Language"
         xmlns:ext="clr-namespace:CodeHubDesktop.DynamicLanguage"
         xmlns:userControl="clr-namespace:CodeHubDesktop.Views"
         ext:Translation.ResourceManager="{x:Static lang:Lang.ResourceManager}"

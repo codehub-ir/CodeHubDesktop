@@ -1,4 +1,4 @@
-﻿using CodeHubDesktop.Language;
+﻿using CodeHubDesktop.MultiLanguage.Language;
 using Prism.Mvvm;
 using System.Reflection;
 

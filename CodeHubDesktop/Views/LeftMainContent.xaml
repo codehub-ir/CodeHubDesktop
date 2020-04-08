@@ -2,14 +2,15 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:prism="http://prismlibrary.com/"     
-             xmlns:lang="clr-namespace:CodeHubDesktop.Language"
+             xmlns:lang="clr-namespace:CodeHubDesktop.MultiLanguage.Language"
              xmlns:ext="clr-namespace:CodeHubDesktop.DynamicLanguage" 
              xmlns:ui="http://schemas.modernwpf.com/2019" 
              xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls" 
              xmlns:hc="https://handyorg.github.io/handycontrol"
              ext:Translation.ResourceManager="{x:Static lang:Lang.ResourceManager}"
+             xmlns:control="clr-namespace:CodeHubDesktop.Controls"
              prism:ViewModelLocator.AutoWireViewModel="True">
-    <ui:HamburgerMenuEx ItemCommand="{Binding SwitchItemCmd}" OptionsItemCommand="{Binding SwitchItemOptionCmd}" SelectedIndex="1" PaneTitle="{ext:Loc PaneTitle}" IsPaneOpen="True">
+    <control:MyHamburgerMenu PaneFontFamily="{StaticResource IRANSans}" ItemCommand="{Binding SwitchItemCmd}" OptionsItemCommand="{Binding SwitchItemOptionCmd}" SelectedIndex="1" PaneTitle="{ext:Loc PaneTitle}" IsPaneOpen="True">
         <mah:HamburgerMenu.ItemsSource>
             <mah:HamburgerMenuItemCollection>
                 <mah:HamburgerMenuHeaderItem Label="{ext:Loc HamburgerMenuHeaderItem}" />
@@ -51,5 +52,5 @@
             </mah:HamburgerMenuItemCollection>
         </mah:HamburgerMenu.OptionsItemsSource>
         
-    </ui:HamburgerMenuEx>
+    </control:MyHamburgerMenu>
 </UserControl>

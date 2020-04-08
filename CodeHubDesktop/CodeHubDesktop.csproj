@@ -51,14 +51,14 @@
     </Resource>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="Language\Lang.Designer.cs">
+    <Compile Update="MultiLanguage\Language\Lang.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>Lang.resx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Update="Language\Lang.resx">
+    <EmbeddedResource Update="MultiLanguage\Language\Lang.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Lang.Designer.cs</LastGenOutput>
     </EmbeddedResource>

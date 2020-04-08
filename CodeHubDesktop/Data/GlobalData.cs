@@ -1,4 +1,4 @@
-﻿using CodeHubDesktop.Language;
+﻿using CodeHubDesktop.MultiLanguage.Language;
 using Newtonsoft.Json;
 using System;
 using System.IO;

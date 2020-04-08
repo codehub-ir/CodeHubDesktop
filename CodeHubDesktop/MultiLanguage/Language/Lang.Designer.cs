@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CodeHubDesktop.Language {
+namespace CodeHubDesktop.MultiLanguage.Language {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace CodeHubDesktop.Language {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("CodeHubDesktop.Language.Lang", typeof(Lang).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("CodeHubDesktop.MultiLanguage.Language.Lang", typeof(Lang).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

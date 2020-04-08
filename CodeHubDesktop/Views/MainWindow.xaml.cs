@@ -1,5 +1,5 @@
 ﻿using CodeHubDesktop.DynamicLanguage;
-using CodeHubDesktop.Language;
+using CodeHubDesktop.MultiLanguage.Language;
 using CodeHubDesktop.ViewModels;
 using HandyControl.Controls;
 using HandyControl.Data;

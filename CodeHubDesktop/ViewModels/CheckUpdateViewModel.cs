@@ -1,4 +1,4 @@
-﻿using CodeHubDesktop.Language;
+﻿using CodeHubDesktop.MultiLanguage.Language;
 using HandyControl.Controls;
 using Prism.Commands;
 using Prism.Mvvm;

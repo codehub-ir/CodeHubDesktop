@@ -169,6 +169,9 @@ Desktop Version Work with CodeHub API.</value>
   <data name="DownloadNewVer" xml:space="preserve">
     <value>Download New Update</value>
   </data>
+  <data name="General" xml:space="preserve">
+    <value>General</value>
+  </data>
   <data name="Github" xml:space="preserve">
     <value>CodeHub Desktop</value>
   </data>
@@ -177,6 +180,15 @@ Desktop Version Work with CodeHub API.</value>
   </data>
   <data name="HamburgerMenuHeaderItem" xml:space="preserve">
     <value>Code Hub v1.0.0</value>
+  </data>
+  <data name="HistoryDate" xml:space="preserve">
+    <value>Publish Date</value>
+  </data>
+  <data name="HistoryLanguage" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="HistoryLink" xml:space="preserve">
+    <value>Link</value>
   </data>
   <data name="LatestVersion" xml:space="preserve">
     <value>You are using Latest Version</value>
@@ -199,6 +211,12 @@ Desktop Version Work with CodeHub API.</value>
   <data name="Published" xml:space="preserve">
     <value>Published at</value>
   </data>
+  <data name="SearchbarPlaceHolder" xml:space="preserve">
+    <value>Enter Snippet Id or Url...</value>
+  </data>
+  <data name="SearchbarTitle" xml:space="preserve">
+    <value>Get Snippet By Id or Url</value>
+  </data>
   <data name="SelectLanguage" xml:space="preserve">
     <value>Choose your Language...</value>
   </data>
@@ -207,6 +225,9 @@ Desktop Version Work with CodeHub API.</value>
   </data>
   <data name="Settings" xml:space="preserve">
     <value>Settings</value>
+  </data>
+  <data name="SettingStoreSnippet" xml:space="preserve">
+    <value>Save Snippets</value>
   </data>
   <data name="ShieldSubject" xml:space="preserve">
     <value>Link Copied to Clipborad</value>

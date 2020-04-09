@@ -168,6 +168,9 @@
   <data name="DownloadNewVer" xml:space="preserve">
     <value>دانلود بروزرسانی جدید</value>
   </data>
+  <data name="General" xml:space="preserve">
+    <value>عمومی</value>
+  </data>
   <data name="Github" xml:space="preserve">
     <value>کدهاب دسکتاپ</value>
   </data>
@@ -176,6 +179,15 @@
   </data>
   <data name="HamburgerMenuHeaderItem" xml:space="preserve">
     <value>کدهاب 1.0.0</value>
+  </data>
+  <data name="HistoryDate" xml:space="preserve">
+    <value>تاریخ انتشار</value>
+  </data>
+  <data name="HistoryLanguage" xml:space="preserve">
+    <value>زبان</value>
+  </data>
+  <data name="HistoryLink" xml:space="preserve">
+    <value>لینک</value>
   </data>
   <data name="LatestVersion" xml:space="preserve">
     <value>شما از آخرین نسخه استفاده میکنید</value>
@@ -198,6 +210,12 @@
   <data name="Published" xml:space="preserve">
     <value>انتشار در</value>
   </data>
+  <data name="SearchbarPlaceHolder" xml:space="preserve">
+    <value>آیدی اسنیپت یا لینک...</value>
+  </data>
+  <data name="SearchbarTitle" xml:space="preserve">
+    <value>دریافت اسنیپت با آیدی یا لینک</value>
+  </data>
   <data name="SelectLanguage" xml:space="preserve">
     <value>زبان خودتان را انتخاب کنید...</value>
   </data>
@@ -206,6 +224,9 @@
   </data>
   <data name="Settings" xml:space="preserve">
     <value>تنظیمات</value>
+  </data>
+  <data name="SettingStoreSnippet" xml:space="preserve">
+    <value>ذخیره اسنیپت ها</value>
   </data>
   <data name="ShieldSubject" xml:space="preserve">
     <value>لینک به حافظه کپی شد</value>

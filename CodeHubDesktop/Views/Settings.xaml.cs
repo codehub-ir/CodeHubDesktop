@@ -10,6 +10,11 @@ namespace CodeHubDesktop.Views
         public Settings()
         {
             InitializeComponent();
+
+            if (GlobalData.Config.Lang.Equals("fa-IR"))
+                tg.HorizontalAlignment = System.Windows.HorizontalAlignment.Left;
+            else
+                    tg.HorizontalAlignment = System.Windows.HorizontalAlignment.Right;
         }
     }
 }

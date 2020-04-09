@@ -215,6 +215,15 @@ namespace CodeHubDesktop.MultiLanguage.Language {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to General.
+        /// </summary>
+        public static string General {
+            get {
+                return ResourceManager.GetString("General", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to CodeHub Desktop.
         /// </summary>
         public static string Github {
@@ -238,6 +247,33 @@ namespace CodeHubDesktop.MultiLanguage.Language {
         public static string HamburgerMenuHeaderItem {
             get {
                 return ResourceManager.GetString("HamburgerMenuHeaderItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Publish Date.
+        /// </summary>
+        public static string HistoryDate {
+            get {
+                return ResourceManager.GetString("HistoryDate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Language.
+        /// </summary>
+        public static string HistoryLanguage {
+            get {
+                return ResourceManager.GetString("HistoryLanguage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Link.
+        /// </summary>
+        public static string HistoryLink {
+            get {
+                return ResourceManager.GetString("HistoryLink", resourceCulture);
             }
         }
         
@@ -305,6 +341,24 @@ namespace CodeHubDesktop.MultiLanguage.Language {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Enter Snippet Id or Url....
+        /// </summary>
+        public static string SearchbarPlaceHolder {
+            get {
+                return ResourceManager.GetString("SearchbarPlaceHolder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Get Snippet By Id or Url.
+        /// </summary>
+        public static string SearchbarTitle {
+            get {
+                return ResourceManager.GetString("SearchbarTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Choose your Language....
         /// </summary>
         public static string SelectLanguage {
@@ -328,6 +382,15 @@ namespace CodeHubDesktop.MultiLanguage.Language {
         public static string Settings {
             get {
                 return ResourceManager.GetString("Settings", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Save Snippets.
+        /// </summary>
+        public static string SettingStoreSnippet {
+            get {
+                return ResourceManager.GetString("SettingStoreSnippet", resourceCulture);
             }
         }
         

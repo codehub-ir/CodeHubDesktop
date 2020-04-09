@@ -6,6 +6,8 @@ This App work with CodeHub API services.
 - Prism MVVM
 - EntityFrameWorkCore
 - .Net Core 3.1
+- Multi Language (Dynamic)
+- Dark/Light/Violet Theme
 
 ![CodeHubDesktop](ScreenShot/1.png)
 ![CodeHubDesktop](ScreenShot/2.png)

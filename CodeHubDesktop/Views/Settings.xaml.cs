@@ -13,11 +13,11 @@ namespace CodeHubDesktop.Views
 
             if (GlobalData.Config.Lang.Equals("fa-IR"))
             {
-                tg.HorizontalAlignment = System.Windows.HorizontalAlignment.Left;
+                tg.HorizontalAlignment = System.Windows.HorizontalAlignment.Right;
             }
             else
             {
-                tg.HorizontalAlignment = System.Windows.HorizontalAlignment.Right;
+                tg.HorizontalAlignment = System.Windows.HorizontalAlignment.Left;
             }
         }
     }

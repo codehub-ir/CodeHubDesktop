@@ -12,9 +12,9 @@
         <hc:ScrollViewer>
             <StackPanel Margin="10">
                 <hc:TextBox Margin="10,0" Text="{Binding Subject, UpdateSourceTrigger=PropertyChanged}" hc:InfoElement.Placeholder="{ext:Loc Subject}" hc:TitleElement.Title="{ext:Loc SubjectTitle}"/>
-                <hc:TextBox Text="{Binding Detail, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" TextAlignment="Left" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Margin="10" Height="150" hc:InfoElement.Placeholder="{ext:Loc Detail}" hc:TitleElement.Title="{ext:Loc DetailTitle}"/>
+                <hc:TextBox Text="{Binding Detail, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" TextAlignment="Left" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Margin="10" Height="100" hc:InfoElement.Placeholder="{ext:Loc Detail}" hc:TitleElement.Title="{ext:Loc DetailTitle}"/>
                 <hc:ComboBox SelectedItem="{Binding SelectedCode, UpdateSourceTrigger=PropertyChanged}" IsEditable="True" Name="cmb" ItemsSource="{Binding LanguageList}" hc:InfoElement.Placeholder="{ext:Loc SelectLanguage}" hc:TitleElement.Title="{ext:Loc SelectLanguageTitle}" Margin="10,0"/>
-                <control:BindableAvalonEditor Text="{Binding Snippet, UpdateSourceTrigger=PropertyChanged}" SyntaxHighlighting="{Binding ElementName=cmb, Path=SelectedItem}" WordWrap="True" ShowLineNumbers="True" Margin="10,15" Height="250"/>
+                <control:BindableAvalonEditor Text="{Binding Snippet, UpdateSourceTrigger=PropertyChanged}" SyntaxHighlighting="{Binding ElementName=cmb, Path=SelectedItem}" WordWrap="True" ShowLineNumbers="True" Margin="10,15" Height="200"/>
                 <StackPanel HorizontalAlignment="Center" Margin="10,10" Orientation="Horizontal">
                     <Button IsEnabled="{Binding IsEnabled}" Command="{Binding CreateCommand}" Content="{ext:Loc Create}" Width="180" IsDefault="True" Height="35" hc:IconElement.Geometry="{DynamicResource AddGeometry}" hc:IconElement.Width="18" hc:IconElement.Height="18"/>
                     <Button IsEnabled="{Binding IsEnabled}" Command="{Binding ClearCommand}" Margin="10,0" Content="{ext:Loc Clear}" IsCancel="True" Width="180" IsDefault="True" Height="35" hc:IconElement.Geometry="{DynamicResource DeleteGeometry}" hc:IconElement.Width="18" hc:IconElement.Height="18"/>
@@ -34,7 +34,7 @@
                             <Setter Property="Visibility" Value="Visible"/>
                             <Style.Triggers>
                                 <DataTrigger Binding="{Binding SnippetUrl}" Value="{x:Null}">
-                                    <Setter Property="Visibility" Value="Hidden" />
+                                    <Setter Property="Visibility" Value="Collapsed" />
                                 </DataTrigger>
                             </Style.Triggers>
                         </Style>

@@ -136,8 +136,14 @@ Desktop Version Work with CodeHub API.</value>
   <data name="CheckForUpdate" xml:space="preserve">
     <value>Check for Update</value>
   </data>
+  <data name="Clear" xml:space="preserve">
+    <value>Clear</value>
+  </data>
   <data name="ContactUs" xml:space="preserve">
     <value>Contact Us</value>
+  </data>
+  <data name="Create" xml:space="preserve">
+    <value>Create</value>
   </data>
   <data name="Created" xml:space="preserve">
     <value>Created at</value>
@@ -147,6 +153,12 @@ Desktop Version Work with CodeHub API.</value>
   </data>
   <data name="CurrentVer" xml:space="preserve">
     <value>Current Version</value>
+  </data>
+  <data name="Detail" xml:space="preserve">
+    <value>Detail...</value>
+  </data>
+  <data name="DetailTitle" xml:space="preserve">
+    <value>Snippet Detail (Optional)</value>
   </data>
   <data name="Developer" xml:space="preserve">
     <value>Programmer Mahdi Hosseini</value>
@@ -187,11 +199,32 @@ Desktop Version Work with CodeHub API.</value>
   <data name="Published" xml:space="preserve">
     <value>Published at</value>
   </data>
+  <data name="SelectLanguage" xml:space="preserve">
+    <value>Choose your Language...</value>
+  </data>
+  <data name="SelectLanguageTitle" xml:space="preserve">
+    <value>Choose Your Snippet Language</value>
+  </data>
   <data name="Settings" xml:space="preserve">
     <value>Settings</value>
   </data>
+  <data name="ShieldSubject" xml:space="preserve">
+    <value>Link Copied to Clipborad</value>
+  </data>
   <data name="SnippetHistory" xml:space="preserve">
     <value>Snippet History</value>
+  </data>
+  <data name="Subject" xml:space="preserve">
+    <value>Subject...</value>
+  </data>
+  <data name="SubjectTitle" xml:space="preserve">
+    <value>Snippet Title</value>
+  </data>
+  <data name="TabLocal" xml:space="preserve">
+    <value>Your Snippets</value>
+  </data>
+  <data name="TabOther" xml:space="preserve">
+    <value>Others Snippets</value>
   </data>
   <data name="Update" xml:space="preserve">
     <value>Update</value>

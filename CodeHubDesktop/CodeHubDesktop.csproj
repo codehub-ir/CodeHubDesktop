@@ -26,6 +26,7 @@
     <None Remove="Resources\Img\Flag\fa.png" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="AvalonEdit" Version="6.0.1" />
     <PackageReference Include="HandyControls" Version="2.4.9.2" />
     <PackageReference Include="ModernWpfUI.MahApps" Version="0.8.2-preview.1" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />

@@ -3,6 +3,7 @@ using HandyControl.Data;
 using HandyControl.Tools;
 using ModernWpf;
 using Prism.Ioc;
+using Prism.Regions;
 using System;
 using System.Windows;
 using System.Windows.Media;
@@ -15,6 +16,12 @@ namespace CodeHubDesktop
         {
             GlobalData.Init();
             ConfigHelper.Instance.SetLang(GlobalData.Config.Lang);
+        }
+
+        protected override void OnStartup(StartupEventArgs e)
+        {
+            base.OnStartup(e);
+            Container.Resolve<IRegionManager>().RequestNavigate("ContentRegion", "CreateSnippet");
         }
 
         protected override Window CreateShell()

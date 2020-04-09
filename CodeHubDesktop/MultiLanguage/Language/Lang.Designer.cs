@@ -116,11 +116,29 @@ namespace CodeHubDesktop.MultiLanguage.Language {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Clear.
+        /// </summary>
+        public static string Clear {
+            get {
+                return ResourceManager.GetString("Clear", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Contact Us.
         /// </summary>
         public static string ContactUs {
             get {
                 return ResourceManager.GetString("ContactUs", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Create.
+        /// </summary>
+        public static string Create {
+            get {
+                return ResourceManager.GetString("Create", resourceCulture);
             }
         }
         
@@ -148,6 +166,24 @@ namespace CodeHubDesktop.MultiLanguage.Language {
         public static string CurrentVer {
             get {
                 return ResourceManager.GetString("CurrentVer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Detail....
+        /// </summary>
+        public static string Detail {
+            get {
+                return ResourceManager.GetString("Detail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Snippet Detail (Optional).
+        /// </summary>
+        public static string DetailTitle {
+            get {
+                return ResourceManager.GetString("DetailTitle", resourceCulture);
             }
         }
         
@@ -269,6 +305,24 @@ namespace CodeHubDesktop.MultiLanguage.Language {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Choose your Language....
+        /// </summary>
+        public static string SelectLanguage {
+            get {
+                return ResourceManager.GetString("SelectLanguage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Choose Your Snippet Language.
+        /// </summary>
+        public static string SelectLanguageTitle {
+            get {
+                return ResourceManager.GetString("SelectLanguageTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Settings.
         /// </summary>
         public static string Settings {
@@ -278,11 +332,56 @@ namespace CodeHubDesktop.MultiLanguage.Language {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Link Copied to Clipborad.
+        /// </summary>
+        public static string ShieldSubject {
+            get {
+                return ResourceManager.GetString("ShieldSubject", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Snippet History.
         /// </summary>
         public static string SnippetHistory {
             get {
                 return ResourceManager.GetString("SnippetHistory", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Subject....
+        /// </summary>
+        public static string Subject {
+            get {
+                return ResourceManager.GetString("Subject", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Snippet Title.
+        /// </summary>
+        public static string SubjectTitle {
+            get {
+                return ResourceManager.GetString("SubjectTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Your Snippets.
+        /// </summary>
+        public static string TabLocal {
+            get {
+                return ResourceManager.GetString("TabLocal", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Others Snippets.
+        /// </summary>
+        public static string TabOther {
+            get {
+                return ResourceManager.GetString("TabOther", resourceCulture);
             }
         }
         

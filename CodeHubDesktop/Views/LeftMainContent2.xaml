@@ -14,7 +14,7 @@
         Width="190" MinWidth="190" MaxWidth="220"
         Effect="{StaticResource EffectShadow4}">
     <DockPanel>
-        <ListBox VirtualizingStackPanel.IsVirtualizing="True" BorderThickness="0" SelectionMode="Single" Style="{StaticResource ListBoxTransparent}">
+        <ListBox SelectedIndex="0" VirtualizingStackPanel.IsVirtualizing="True" BorderThickness="0" SelectionMode="Single" Style="{StaticResource ListBoxTransparent}">
             <ListBoxItem Tag="CreateSnippet" Margin="10,15,10,0" Content="{ext:Loc CreateSnippet}"/>
             <ListBoxItem Tag="SnippetHistory" Margin="10,5,10,0" Content="{ext:Loc SnippetHistory}"/>
             <ListBoxItem Tag="CheckUpdate" Margin="10,5,10,0" Content="{ext:Loc Update}"/>

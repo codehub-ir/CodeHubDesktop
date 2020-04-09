@@ -1,7 +1,4 @@
 ﻿using ModernWpf.MahApps.Controls;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
@@ -34,7 +31,7 @@ namespace CodeHubDesktop.Controls
         {
             if (PaneGrid != null)
             {
-                var paneFontFamily = PaneFontFamily;
+                FontFamily paneFontFamily = PaneFontFamily;
                 if (paneFontFamily != null)
                 {
                     PaneGrid.Resources[SystemFonts.MessageFontFamilyKey] = paneFontFamily;

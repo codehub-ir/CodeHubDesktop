@@ -130,6 +130,12 @@ Desktop Version Work with CodeHub API.</value>
   <data name="AdminErrorTitle" xml:space="preserve">
     <value>Administrator Access Error</value>
   </data>
+  <data name="APIUrl" xml:space="preserve">
+    <value>Enter API Url...</value>
+  </data>
+  <data name="APIUrlTitle" xml:space="preserve">
+    <value>API Url</value>
+  </data>
   <data name="ChangeLanguage" xml:space="preserve">
     <value>Do you want to change language?</value>
   </data>
@@ -195,6 +201,12 @@ Desktop Version Work with CodeHub API.</value>
   </data>
   <data name="DownloadNewVer" xml:space="preserve">
     <value>Download New Update</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Error...</value>
+  </data>
+  <data name="ErrorTitle" xml:space="preserve">
+    <value>Error</value>
   </data>
   <data name="General" xml:space="preserve">
     <value>General</value>

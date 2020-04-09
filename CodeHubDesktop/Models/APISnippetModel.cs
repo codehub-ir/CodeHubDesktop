@@ -6,6 +6,7 @@
         public string detail { get; set; }
         public string script { get; set; }
         public string language { get; set; }
+        public string error { get; set; }
     }
 
     public class GetSnippetModel
@@ -17,5 +18,6 @@
         public string language { get; set; }
         public string pub_date { get; set; }
         public string link { get; set; }
+        public string error { get; set; }
     }
 }

@@ -129,6 +129,12 @@
   <data name="AdminErrorTitle" xml:space="preserve">
     <value>خطای دسترسی</value>
   </data>
+  <data name="APIUrl" xml:space="preserve">
+    <value>آدرس ای پی آی را وارد کنید...</value>
+  </data>
+  <data name="APIUrlTitle" xml:space="preserve">
+    <value>آدرس ای پی آی</value>
+  </data>
   <data name="ChangeLanguage" xml:space="preserve">
     <value>آیا مایل به تغییر زبان برنامه هستید؟</value>
   </data>
@@ -194,6 +200,12 @@
   </data>
   <data name="DownloadNewVer" xml:space="preserve">
     <value>دانلود بروزرسانی جدید</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>خطا...</value>
+  </data>
+  <data name="ErrorTitle" xml:space="preserve">
+    <value>متن خطا</value>
   </data>
   <data name="General" xml:space="preserve">
     <value>عمومی</value>

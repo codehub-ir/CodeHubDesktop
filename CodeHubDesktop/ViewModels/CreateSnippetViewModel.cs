@@ -14,6 +14,12 @@ namespace CodeHubDesktop.ViewModels
 {
     public class CreateSnippetViewModel : BindableBase
     {
+        private string _Error;
+        public string Error
+        {
+            get => _Error;
+            set => SetProperty(ref _Error, value);
+        }
         private string _SnippetUrl;
         public string SnippetUrl
         {
@@ -83,12 +89,13 @@ namespace CodeHubDesktop.ViewModels
                     title = Subject,
                     detail = Detail,
                     language = SelectedCode.ToLower(),
-                    script = Snippet
+                    script = Snippet,
+                    error = Error
                 };
 
                 string json = JsonConvert.SerializeObject(snippet);
                 StringContent data = new StringContent(json, Encoding.UTF8, "application/json");
-                string url = "http://codehub.pythonanywhere.com/api/v1/snippet/";
+                string url = GlobalData.Config.APIBaseAddress;
 
                 using HttpClient client = new HttpClient();
                 HttpResponseMessage response = await client.PostAsync(url, data);
@@ -96,7 +103,6 @@ namespace CodeHubDesktop.ViewModels
                 string result = response.Content.ReadAsStringAsync().Result;
                 GetSnippetModel parse = JsonConvert.DeserializeObject<GetSnippetModel>(result);
                 SnippetUrl = parse.link;
-                IsEnabled = true;
                 if (GlobalData.Config.StoreSnippet)
                 {
                     SnippetsModel entity = new SnippetsModel
@@ -107,22 +113,27 @@ namespace CodeHubDesktop.ViewModels
                         Link = parse.link,
                         PubDate = parse.pub_date,
                         Script = parse.script,
-                        SId = parse.SID
+                        SId = parse.SID,
+                        Error = parse.error
                     };
                     IDataService<SnippetsModel> dataService = new GenericDataService<SnippetsModel>();
                     await dataService.CreateSnippet(entity);
                 }
+                IsEnabled = true;
             }
             catch (Exception ex)
             {
-
                 Growl.Error(ex.Message);
+            }
+            finally
+            {
+                IsEnabled = true;
             }
         }
 
         private void OnClear()
         {
-            Snippet = Subject = Detail = string.Empty;
+            Error = Snippet = Subject = Detail = string.Empty;
         }
 
         internal void FillComboBox()

@@ -8,8 +8,8 @@
     <Version>1.0.0.0</Version>
     <Configurations>Debug;Release</Configurations>
     <Copyright>Copyright © Mahdi 2018-2020</Copyright>
-    <FileVersion>1.0.0.0</FileVersion>
-    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <FileVersion>1.0.1.0</FileVersion>
+    <AssemblyVersion>1.0.1.0</AssemblyVersion>
     <LangVersion>latest</LangVersion>
     <SatelliteResourceLanguages>en;fa;en-US;fa-IR</SatelliteResourceLanguages>
     <ApplicationIcon>gitbanner_6jm_icon.ico</ApplicationIcon>

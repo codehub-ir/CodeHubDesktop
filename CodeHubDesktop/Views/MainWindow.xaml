@@ -17,8 +17,8 @@
         WindowStartupLocation="CenterScreen"
         ShowTitle="True"
         FontFamily="{StaticResource IRANSans}"
-        Height="600" 
-        Width="900">
+        Height="720" 
+        Width="1024">
     <hc:Window.NonClientAreaContent>
         <Grid>
             <Grid.ColumnDefinitions>

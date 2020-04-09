@@ -20,6 +20,13 @@ namespace CodeHubDesktop.ViewModels
     public class SnippetHistoryViewModel : BindableBase
     {
         #region OnlineSnipet
+
+        private string _Error;
+        public string Error
+        {
+            get => _Error;
+            set => SetProperty(ref _Error, value);
+        }
         private string _SearchText;
         public string SearchText
         {
@@ -178,7 +185,7 @@ namespace CodeHubDesktop.ViewModels
                 }
                 else
                 {
-                    url = $"http://codehub.pythonanywhere.com/api/v1/snippet/{SearchText}";
+                    url = GlobalData.Config.APIBaseAddress + SearchText;
                 }
                 using HttpClient client = new HttpClient();
                 HttpResponseMessage response = await client.GetAsync(url);
@@ -191,6 +198,7 @@ namespace CodeHubDesktop.ViewModels
                 SnippetScript = parse.script;
                 SnippetUrl = parse.link;
                 SnippetLanguage = parse.language;
+                Error = parse.error;
                 PanelVisibility = Visibility.Visible;
             }
             catch (Exception ex)

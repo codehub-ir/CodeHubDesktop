@@ -30,8 +30,10 @@
                             </StackPanel>
                             <hc:TextBox Visibility="{Binding PanelVisibility}" IsReadOnly="True" Text="{Binding SnippetTitle, UpdateSourceTrigger=PropertyChanged}" Margin="10,0" hc:InfoElement.Placeholder="{ext:Loc Subject}" hc:TitleElement.Title="{ext:Loc SubjectTitle}"/>
                             <hc:TextBox Visibility="{Binding PanelVisibility}" IsReadOnly="True" Text="{Binding SnippetDetail, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" TextAlignment="Left" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Margin="10" Height="150" hc:InfoElement.Placeholder="{ext:Loc Detail}" hc:TitleElement.Title="{ext:Loc DetailTitle}"/>
+                            <hc:TextBox Visibility="{Binding PanelVisibility}" IsReadOnly="True" Text="{Binding Error, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" TextAlignment="Left" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Margin="10" Height="100" hc:InfoElement.Placeholder="{ext:Loc Error}" hc:TitleElement.Title="{ext:Loc ErrorTitle}"/>
 
-                            <control:BindableAvalonEditor Visibility="{Binding PanelVisibility}" Text="{Binding SnippetScript, UpdateSourceTrigger=PropertyChanged}" IsReadOnly="True" SyntaxHighlighting="{Binding ElementName=lang, Path=Status}" WordWrap="True" ShowLineNumbers="True" Margin="10,15" Height="250"/>
+                            <control:BindableAvalonEditor Visibility="{Binding PanelVisibility}" Text="{Binding SnippetScript, UpdateSourceTrigger=PropertyChanged}" IsReadOnly="True" SyntaxHighlighting="{Binding ElementName=lang, Path=Status}" WordWrap="True" ShowLineNumbers="True" Margin="10,5" Height="250"/>
+
                         </StackPanel>
                     </hc:ScrollViewer>
                 </TabItem>
@@ -55,6 +57,7 @@
                                 <DataGridTextColumn Binding="{Binding Language}" Header="{ext:Loc DataGridLanguage}"/>
                                 <DataGridTextColumn Binding="{Binding PubDate}" Header="{ext:Loc DataGridDate}"/>
                                 <DataGridTextColumn Binding="{Binding Link}" Header="{ext:Loc DataGridLink}"/>
+                                <DataGridTextColumn Binding="{Binding Error}" Header="{ext:Loc ErrorTitle}"/>
                                 <DataGridTextColumn Binding="{Binding Script}" Header="{ext:Loc DataGridScript}"/>
                             </DataGrid.Columns>
                             <hc:Interaction.Triggers>

@@ -98,6 +98,24 @@ namespace CodeHubDesktop.MultiLanguage.Language {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Enter API Url....
+        /// </summary>
+        public static string APIUrl {
+            get {
+                return ResourceManager.GetString("APIUrl", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to API Url.
+        /// </summary>
+        public static string APIUrlTitle {
+            get {
+                return ResourceManager.GetString("APIUrlTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Do you want to change language?.
         /// </summary>
         public static string ChangeLanguage {
@@ -292,6 +310,24 @@ namespace CodeHubDesktop.MultiLanguage.Language {
         public static string DownloadNewVer {
             get {
                 return ResourceManager.GetString("DownloadNewVer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Error....
+        /// </summary>
+        public static string Error {
+            get {
+                return ResourceManager.GetString("Error", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Error.
+        /// </summary>
+        public static string ErrorTitle {
+            get {
+                return ResourceManager.GetString("ErrorTitle", resourceCulture);
             }
         }
         

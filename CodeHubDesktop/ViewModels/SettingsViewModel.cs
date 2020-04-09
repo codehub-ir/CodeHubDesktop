@@ -6,7 +6,18 @@ namespace CodeHubDesktop.ViewModels
 {
     public class SettingsViewModel : BindableBase
     {
-        public static SettingsViewModel Instance;
+        private string _APIUrlText;
+        public string APIUrlText
+        {
+            get => _APIUrlText;
+            set
+            {
+                GlobalData.Config.APIBaseAddress = value;
+                GlobalData.Save();
+                SetProperty(ref _APIUrlText, value);
+            }
+        }
+
         private HorizontalAlignment _ContentAlignment;
         public HorizontalAlignment ContentAlignment
         {
@@ -25,10 +36,10 @@ namespace CodeHubDesktop.ViewModels
 
         public SettingsViewModel()
         {
-            Instance = this;
             StoreSnippetCommand = new DelegateCommand<object>(OnStoreSnippet);
 
             GetIsCheckedToggle = GlobalData.Config.StoreSnippet;
+            APIUrlText = GlobalData.Config.APIBaseAddress;
         }
 
         private void OnStoreSnippet(object isChecked)

@@ -10,7 +10,7 @@
              ext:Translation.ResourceManager="{x:Static lang:Lang.ResourceManager}"
              xmlns:control="clr-namespace:CodeHubDesktop.Controls"
              prism:ViewModelLocator.AutoWireViewModel="True">
-    <control:MyHamburgerMenu PaneFontFamily="{StaticResource IRANSans}" ItemCommand="{Binding SwitchItemCmd}" OptionsItemCommand="{Binding SwitchItemOptionCmd}" SelectedIndex="1" PaneTitle="{ext:Loc PaneTitle}" IsPaneOpen="True">
+    <control:MyHamburgerMenu Width="210" MaxWidth="230" PaneFontFamily="{StaticResource IRANSans}" ItemCommand="{Binding SwitchItemCmd}" OptionsItemCommand="{Binding SwitchItemOptionCmd}" SelectedIndex="1" PaneTitle="{ext:Loc PaneTitle}" IsPaneOpen="True">
         <mah:HamburgerMenu.ItemsSource>
             <mah:HamburgerMenuItemCollection>
                 <mah:HamburgerMenuHeaderItem Label="{ext:Loc HamburgerMenuHeaderItem}" />

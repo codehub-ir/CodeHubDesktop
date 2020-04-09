@@ -1,6 +1,5 @@
 ﻿using Prism.Commands;
 using Prism.Mvvm;
-using System;
 using System.Windows;
 
 namespace CodeHubDesktop.ViewModels
@@ -11,15 +10,15 @@ namespace CodeHubDesktop.ViewModels
         private HorizontalAlignment _ContentAlignment;
         public HorizontalAlignment ContentAlignment
         {
-            get { return _ContentAlignment; }
-            set { SetProperty(ref _ContentAlignment, value); }
+            get => _ContentAlignment;
+            set => SetProperty(ref _ContentAlignment, value);
         }
 
         private bool _GetIsCheckedToggle;
         public bool GetIsCheckedToggle
         {
-            get { return _GetIsCheckedToggle; }
-            set { SetProperty(ref _GetIsCheckedToggle, value); }
+            get => _GetIsCheckedToggle;
+            set => SetProperty(ref _GetIsCheckedToggle, value);
         }
 
         public DelegateCommand<object> StoreSnippetCommand { get; private set; }

@@ -5,16 +5,13 @@
              xmlns:hc="https://handyorg.github.io/handycontrol"
              xmlns:control="clr-namespace:CodeHubDesktop.Controls"
              xmlns:lang="clr-namespace:CodeHubDesktop.MultiLanguage.Language"
-             xmlns:ext="clr-namespace:CodeHubDesktop.DynamicLanguage" xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+             xmlns:ext="clr-namespace:CodeHubDesktop.DynamicLanguage"
              ext:Translation.ResourceManager="{x:Static lang:Lang.ResourceManager}"
              prism:ViewModelLocator.AutoWireViewModel="True">
     <hc:TransitioningContentControl>
         <Border hc:ScrollViewer.IsInertiaEnabled="True" Background="{DynamicResource RegionBrush}" Margin="16" CornerRadius="10" Effect="{StaticResource EffectShadow4}">
             <TabControl Margin="0,10" Style="{StaticResource TabControlInLine}" Background="Transparent">
-                <TabItem Header="{ext:Loc TabLocal}">
-
-                </TabItem>
-                <TabItem Header="{ext:Loc TabOther}">
+                                <TabItem Header="{ext:Loc TabOther}">
                     <hc:ScrollViewer>
                         <StackPanel Margin="10">
                             <hc:SearchBar Text="{Binding SearchText, UpdateSourceTrigger=PropertyChanged}" Style="{StaticResource SearchBarExtend}" hc:InfoElement.Necessary="True" Margin="10,0" hc:InfoElement.Placeholder="{ext:Loc SearchbarPlaceHolder}" hc:TitleElement.Title="{ext:Loc SearchbarTitle}">
@@ -38,6 +35,41 @@
                         </StackPanel>
                     </hc:ScrollViewer>
                 </TabItem>
+
+                <TabItem Header="{ext:Loc TabLocal}">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <hc:SearchBar IsRealTime="True" Text="{Binding LocalSearchText, UpdateSourceTrigger=PropertyChanged}" Margin="10" hc:InfoElement.Placeholder="{ext:Loc Searchbar}"/>
+                        <StackPanel Margin="10,0" Grid.Row="1" Orientation="Horizontal">
+                            <Button IsEnabled="{Binding IsEnabled}" Command="{Binding DeleteCommand}" Content="{ext:Loc Delete}" Width="180" IsDefault="True" Height="35" hc:IconElement.Geometry="{DynamicResource DeleteGeometry}" hc:IconElement.Width="18" hc:IconElement.Height="18"/>
+                        </StackPanel>
+                        <DataGrid IsReadOnly="True" Margin="10,10" Background="Transparent" SelectionMode="Single" Grid.Row="2" HeadersVisibility="All" RowHeaderWidth="60" AutoGenerateColumns="False" ItemsSource="{Binding Data}" hc:DataGridAttach.ShowRowNumber="True">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Binding="{Binding SId}" Header="{ext:Loc DataGridSId}"/>
+                                <DataGridTextColumn Binding="{Binding Title}" Header="{ext:Loc DataGridTitle}"/>
+                                <DataGridTextColumn Binding="{Binding Detail}" Header="{ext:Loc DataGridDetail}"/>
+                                <DataGridTextColumn Binding="{Binding Language}" Header="{ext:Loc DataGridLanguage}"/>
+                                <DataGridTextColumn Binding="{Binding PubDate}" Header="{ext:Loc DataGridDate}"/>
+                                <DataGridTextColumn Binding="{Binding Link}" Header="{ext:Loc DataGridLink}"/>
+                                <DataGridTextColumn Binding="{Binding Script}" Header="{ext:Loc DataGridScript}"/>
+                            </DataGrid.Columns>
+                            <hc:Interaction.Triggers>
+                                <hc:EventTrigger EventName="SelectionChanged">
+                                    <hc:EventToCommand Command="{Binding SelectionChangedCommand}" PassEventArgsToCommand="True"/>
+                                </hc:EventTrigger>
+                                <hc:EventTrigger EventName="MouseDoubleClick">
+                                    <hc:EventToCommand Command="{Binding MouseDoubleClickCommand}" PassEventArgsToCommand="True"/>
+                                </hc:EventTrigger>
+                            </hc:Interaction.Triggers>
+                            
+                        </DataGrid>
+                    </Grid>
+                </TabItem>
+                
             </TabControl>
         </Border>
     </hc:TransitioningContentControl>

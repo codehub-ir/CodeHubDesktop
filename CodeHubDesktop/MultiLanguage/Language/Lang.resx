@@ -139,6 +139,9 @@ Desktop Version Work with CodeHub API.</value>
   <data name="Clear" xml:space="preserve">
     <value>Clear</value>
   </data>
+  <data name="Close" xml:space="preserve">
+    <value>Close</value>
+  </data>
   <data name="ContactUs" xml:space="preserve">
     <value>Contact Us</value>
   </data>
@@ -153,6 +156,30 @@ Desktop Version Work with CodeHub API.</value>
   </data>
   <data name="CurrentVer" xml:space="preserve">
     <value>Current Version</value>
+  </data>
+  <data name="DataGridDate" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="DataGridDetail" xml:space="preserve">
+    <value>Detail</value>
+  </data>
+  <data name="DataGridLanguage" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="DataGridLink" xml:space="preserve">
+    <value>Link</value>
+  </data>
+  <data name="DataGridScript" xml:space="preserve">
+    <value>Script</value>
+  </data>
+  <data name="DataGridSId" xml:space="preserve">
+    <value>SId</value>
+  </data>
+  <data name="DataGridTitle" xml:space="preserve">
+    <value>Subject</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Delete</value>
   </data>
   <data name="Detail" xml:space="preserve">
     <value>Detail...</value>
@@ -179,7 +206,7 @@ Desktop Version Work with CodeHub API.</value>
     <value>CodeHub</value>
   </data>
   <data name="HamburgerMenuHeaderItem" xml:space="preserve">
-    <value>Code Hub v1.0.0</value>
+    <value>Menu</value>
   </data>
   <data name="HistoryDate" xml:space="preserve">
     <value>Publish Date</value>
@@ -210,6 +237,9 @@ Desktop Version Work with CodeHub API.</value>
   </data>
   <data name="Published" xml:space="preserve">
     <value>Published at</value>
+  </data>
+  <data name="Searchbar" xml:space="preserve">
+    <value>Search Title...</value>
   </data>
   <data name="SearchbarPlaceHolder" xml:space="preserve">
     <value>Enter Snippet Id or Url...</value>

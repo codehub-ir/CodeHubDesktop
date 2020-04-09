@@ -1,4 +1,5 @@
-﻿using CodeHubDesktop.Views;
+﻿using CodeHubDesktop.ViewModels;
+using CodeHubDesktop.Views;
 using HandyControl.Data;
 using HandyControl.Tools;
 using ModernWpf;
@@ -35,6 +36,8 @@ namespace CodeHubDesktop
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
+            containerRegistry.RegisterDialog<DialogService, DialogServiceViewModel>();
+
             containerRegistry.RegisterForNavigation<About>();
             containerRegistry.RegisterForNavigation<CheckUpdate>();
             containerRegistry.RegisterForNavigation<Settings>();

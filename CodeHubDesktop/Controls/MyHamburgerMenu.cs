@@ -34,12 +34,12 @@ namespace CodeHubDesktop.Controls
                 FontFamily paneFontFamily = PaneFontFamily;
                 if (paneFontFamily != null)
                 {
-                    PaneGrid.Resources[SystemFonts.MessageFontFamilyKey] = paneFontFamily;
+                    PaneGrid.Resources[SystemFonts.MenuFontFamilyKey] = paneFontFamily;
                     PaneGrid.Resources["ContentControlThemeFontFamily"] = paneFontFamily;
                 }
                 else
                 {
-                    PaneGrid.Resources.Remove(SystemFonts.MessageFontFamilyKey);
+                    PaneGrid.Resources.Remove(SystemFonts.MenuFontFamilyKey);
                     PaneGrid.Resources.Remove("ContentControlThemeFontFamily");
                 }
             }

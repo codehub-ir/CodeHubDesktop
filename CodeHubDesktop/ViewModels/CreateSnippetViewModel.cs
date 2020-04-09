@@ -1,4 +1,5 @@
-﻿using CodeHubDesktop.Models;
+﻿using CodeHubDesktop.Data.Services;
+using CodeHubDesktop.Models;
 using HandyControl.Controls;
 using Newtonsoft.Json;
 using Prism.Commands;
@@ -96,6 +97,21 @@ namespace CodeHubDesktop.ViewModels
                 GetSnippetModel parse = JsonConvert.DeserializeObject<GetSnippetModel>(result);
                 SnippetUrl = parse.link;
                 IsEnabled = true;
+                if (GlobalData.Config.StoreSnippet)
+                {
+                    SnippetsModel entity = new SnippetsModel
+                    {
+                        Title = parse.title,
+                        Detail = parse.detail,
+                        Language = parse.language,
+                        Link = parse.link,
+                        PubDate = parse.pub_date,
+                        Script = parse.script,
+                        SId = parse.SID
+                    };
+                    IDataService<SnippetsModel> dataService = new GenericDataService<SnippetsModel>();
+                    await dataService.CreateSnippet(entity);
+                }
             }
             catch (Exception ex)
             {

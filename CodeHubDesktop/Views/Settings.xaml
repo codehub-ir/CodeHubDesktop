@@ -10,7 +10,7 @@
     <hc:TransitioningContentControl>
         <StackPanel>
             <hc:Divider Content="{ext:Loc General}"/>
-            <ToggleButton x:Name="tg" Style="{StaticResource ToggleButtonSwitch}" Content="{ext:Loc SettingStoreSnippet}" IsChecked="{Binding GetIsCheckedToggle}" Command="{Binding StoreSnippetCommand}" CommandParameter="{Binding IsChecked, RelativeSource={RelativeSource Self}}" />
+            <ToggleButton Margin="10,0" x:Name="tg" Style="{StaticResource ToggleButtonSwitch}" Content="{ext:Loc SettingStoreSnippet}" IsChecked="{Binding GetIsCheckedToggle}" Command="{Binding StoreSnippetCommand}" CommandParameter="{Binding IsChecked, RelativeSource={RelativeSource Self}}" />
         </StackPanel>
     </hc:TransitioningContentControl>
 </UserControl>

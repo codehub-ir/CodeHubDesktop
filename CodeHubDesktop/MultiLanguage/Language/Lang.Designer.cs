@@ -125,6 +125,15 @@ namespace CodeHubDesktop.MultiLanguage.Language {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Close.
+        /// </summary>
+        public static string Close {
+            get {
+                return ResourceManager.GetString("Close", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Contact Us.
         /// </summary>
         public static string ContactUs {
@@ -166,6 +175,78 @@ namespace CodeHubDesktop.MultiLanguage.Language {
         public static string CurrentVer {
             get {
                 return ResourceManager.GetString("CurrentVer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Date.
+        /// </summary>
+        public static string DataGridDate {
+            get {
+                return ResourceManager.GetString("DataGridDate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Detail.
+        /// </summary>
+        public static string DataGridDetail {
+            get {
+                return ResourceManager.GetString("DataGridDetail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Language.
+        /// </summary>
+        public static string DataGridLanguage {
+            get {
+                return ResourceManager.GetString("DataGridLanguage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Link.
+        /// </summary>
+        public static string DataGridLink {
+            get {
+                return ResourceManager.GetString("DataGridLink", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Script.
+        /// </summary>
+        public static string DataGridScript {
+            get {
+                return ResourceManager.GetString("DataGridScript", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SId.
+        /// </summary>
+        public static string DataGridSId {
+            get {
+                return ResourceManager.GetString("DataGridSId", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Subject.
+        /// </summary>
+        public static string DataGridTitle {
+            get {
+                return ResourceManager.GetString("DataGridTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Delete.
+        /// </summary>
+        public static string Delete {
+            get {
+                return ResourceManager.GetString("Delete", resourceCulture);
             }
         }
         
@@ -242,7 +323,7 @@ namespace CodeHubDesktop.MultiLanguage.Language {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Code Hub v1.0.0.
+        ///   Looks up a localized string similar to Menu.
         /// </summary>
         public static string HamburgerMenuHeaderItem {
             get {
@@ -337,6 +418,15 @@ namespace CodeHubDesktop.MultiLanguage.Language {
         public static string Published {
             get {
                 return ResourceManager.GetString("Published", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Search Title....
+        /// </summary>
+        public static string Searchbar {
+            get {
+                return ResourceManager.GetString("Searchbar", resourceCulture);
             }
         }
         

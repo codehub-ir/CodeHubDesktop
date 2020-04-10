@@ -3,7 +3,6 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:prism="http://prismlibrary.com/"  
              xmlns:hc="https://handyorg.github.io/handycontrol"
-             xmlns:control="clr-namespace:CodeHubDesktop.Controls"
              xmlns:lang="clr-namespace:CodeHubDesktop.MultiLanguage.Language"
              xmlns:ext="clr-namespace:CodeHubDesktop.DynamicLanguage"
              ext:Translation.ResourceManager="{x:Static lang:Lang.ResourceManager}"

@@ -216,9 +216,6 @@
   <data name="GithubOrg" xml:space="preserve">
     <value>کدهاب</value>
   </data>
-  <data name="HamburgerMenuHeaderItem" xml:space="preserve">
-    <value>منو</value>
-  </data>
   <data name="HistoryDate" xml:space="preserve">
     <value>تاریخ انتشار</value>
   </data>
@@ -274,19 +271,16 @@
     <value>لینک به حافظه کپی شد</value>
   </data>
   <data name="SnippetHistory" xml:space="preserve">
-    <value>اسنیپت های قبلی</value>
+    <value>اسنیپت های ذخیره شده</value>
+  </data>
+  <data name="SnippetOnline" xml:space="preserve">
+    <value>خواندن اسنیپت های انلاین</value>
   </data>
   <data name="Subject" xml:space="preserve">
     <value>عنوان...</value>
   </data>
   <data name="SubjectTitle" xml:space="preserve">
     <value>عنوان اسنیپت</value>
-  </data>
-  <data name="TabLocal" xml:space="preserve">
-    <value>اسنیپت های شما</value>
-  </data>
-  <data name="TabOther" xml:space="preserve">
-    <value>اسنیپت های دیگران</value>
   </data>
   <data name="Update" xml:space="preserve">
     <value>بروزرسانی</value>

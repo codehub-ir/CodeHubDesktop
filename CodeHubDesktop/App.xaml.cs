@@ -2,12 +2,10 @@
 using CodeHubDesktop.Views;
 using HandyControl.Data;
 using HandyControl.Tools;
-using ModernWpf;
 using Prism.Ioc;
 using Prism.Regions;
 using System;
 using System.Windows;
-using System.Windows.Media;
 
 namespace CodeHubDesktop
 {
@@ -17,6 +15,10 @@ namespace CodeHubDesktop
         {
             GlobalData.Init();
             ConfigHelper.Instance.SetLang(GlobalData.Config.Lang);
+            if (GlobalData.Config.Skin != SkinType.Default)
+            {
+                UpdateSkin(GlobalData.Config.Skin);
+            }
         }
 
         protected override void OnStartup(StartupEventArgs e)
@@ -27,10 +29,6 @@ namespace CodeHubDesktop
 
         protected override Window CreateShell()
         {
-            if (GlobalData.Config.Skin != SkinType.Default)
-            {
-                UpdateSkin(GlobalData.Config.Skin);
-            }
             return Container.Resolve<MainWindow>();
         }
 
@@ -43,6 +41,7 @@ namespace CodeHubDesktop
             containerRegistry.RegisterForNavigation<Settings>();
             containerRegistry.RegisterForNavigation<CreateSnippet>();
             containerRegistry.RegisterForNavigation<SnippetHistory>();
+            containerRegistry.RegisterForNavigation<SnippetOnline>();
             containerRegistry.RegisterForNavigation<LeftMainContent>();
         }
         internal void UpdateSkin(SkinType skin)
@@ -55,22 +54,6 @@ namespace CodeHubDesktop
             {
                 Source = new Uri("pack://application:,,,/HandyControl;component/Themes/Theme.xaml")
             });
-
-            if (skin.Equals(SkinType.Dark))
-            {
-                ThemeManager.Current.ApplicationTheme = ApplicationTheme.Dark;
-            }
-            else if (skin.Equals(SkinType.Default))
-            {
-                ThemeManager.Current.ApplicationTheme = ApplicationTheme.Light;
-            }
-            else
-            {
-                ThemeManager.Current.ApplicationTheme = ApplicationTheme.Light;
-                ThemeManager.Current.AccentColor = ResourceHelper.GetResource<Color>(ResourceToken.VioletColor);
-
-            }
-
         }
     }
 }

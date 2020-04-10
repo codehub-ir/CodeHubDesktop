@@ -13,7 +13,6 @@ namespace CodeHubDesktop.Views
         public MainWindow()
         {
             InitializeComponent();
-            setLeftMain();
         }
 
         #region Change Skin and Language
@@ -63,36 +62,5 @@ namespace CodeHubDesktop.Views
             }
         }
         #endregion
-
-        private void ToggleButton_Checked(object sender, RoutedEventArgs e)
-        {
-            if (tg.IsChecked.Value)
-            {
-                left.Visibility = Visibility.Visible;
-                left2.Visibility = Visibility.Collapsed;
-            }
-            else
-            {
-                left.Visibility = Visibility.Collapsed;
-                left2.Visibility = Visibility.Visible;
-            }
-            GlobalData.Config.IsModernStyle = tg.IsChecked.Value;
-            GlobalData.Save();
-        }
-
-        internal void setLeftMain()
-        {
-            tg.IsChecked = GlobalData.Config.IsModernStyle;
-            if (GlobalData.Config.IsModernStyle)
-            {
-                left.Visibility = Visibility.Visible;
-                left2.Visibility = Visibility.Collapsed;
-            }
-            else
-            {
-                left.Visibility = Visibility.Collapsed;
-                left2.Visibility = Visibility.Visible;
-            }
-        }
     }
 }

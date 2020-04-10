@@ -1,45 +1,38 @@
-﻿using MahApps.Metro.Controls;
-using ModernWpf.MahApps.Controls;
-using Prism.Commands;
+﻿using Prism.Commands;
 using Prism.Mvvm;
 using Prism.Regions;
+using System.Windows.Controls;
 
 namespace CodeHubDesktop.ViewModels
 {
     public class LeftMainContentViewModel : BindableBase
     {
         private readonly IRegionManager _regionManager;
-        public DelegateCommand<HamburgerMenuEx> SwitchItemCmd { get; private set; }
-        public DelegateCommand<HamburgerMenuEx> SwitchItemOptionCmd { get; private set; }
+
+        #region Command
+        public DelegateCommand<SelectionChangedEventArgs> SwitchItemCmd { get; private set; }
+        #endregion
+
         public LeftMainContentViewModel(IRegionManager regionManager)
         {
             _regionManager = regionManager;
-            SwitchItemCmd = new DelegateCommand<HamburgerMenuEx>(Switch);
-            SwitchItemOptionCmd = new DelegateCommand<HamburgerMenuEx>(SwitchOption);
+            SwitchItemCmd = new DelegateCommand<SelectionChangedEventArgs>(Switch);
         }
 
-        private void SwitchOption(HamburgerMenuEx e)
+        private void Switch(SelectionChangedEventArgs e)
         {
-            if (e.SelectedOptionsItem is HamburgerMenuIconItem item)
+            if (e.AddedItems.Count == 0)
             {
-                NavigateToRegion(item.Tag.ToString());
+                return;
             }
-        }
+            if (e.AddedItems[0] is ListBoxItem item)
+            {
+                if (item.Tag != null)
+                {
+                    _regionManager.RequestNavigate("ContentRegion", item.Tag.ToString());
+                }
+            }
 
-        private void Switch(HamburgerMenuEx e)
-        {
-            if (e.SelectedItem is HamburgerMenuIconItem item)
-            {
-                NavigateToRegion(item.Tag.ToString());
-            }
-        }
-
-        internal void NavigateToRegion(string tag)
-        {
-            if (tag != null)
-            {
-                _regionManager.RequestNavigate("ContentRegion", tag);
-            }
         }
     }
 }

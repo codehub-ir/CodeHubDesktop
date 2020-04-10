@@ -9,7 +9,6 @@ namespace CodeHubDesktop
 
         public string Lang { get; set; } = "fa-IR";
         public string APIBaseAddress { get; set; } = "http://codehub.pythonanywhere.com/api/v1/snippet/";
-        public bool IsModernStyle { get; set; } = false;
         public bool StoreSnippet { get; set; } = false;
         public SkinType Skin { get; set; } = SkinType.Default;
     }

@@ -3,11 +3,11 @@
 namespace CodeHubDesktop.Views
 {
     /// <summary>
-    /// Interaction logic for Settings
+    /// Interaction logic for SnippetOnline
     /// </summary>
-    public partial class Settings : UserControl
+    public partial class SnippetOnline : UserControl
     {
-        public Settings()
+        public SnippetOnline()
         {
             InitializeComponent();
         }

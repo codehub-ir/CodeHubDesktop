@@ -359,15 +359,6 @@ namespace CodeHubDesktop.MultiLanguage.Language {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Menu.
-        /// </summary>
-        public static string HamburgerMenuHeaderItem {
-            get {
-                return ResourceManager.GetString("HamburgerMenuHeaderItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Publish Date.
         /// </summary>
         public static string HistoryDate {
@@ -530,11 +521,20 @@ namespace CodeHubDesktop.MultiLanguage.Language {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Snippet History.
+        ///   Looks up a localized string similar to Stored Snippet.
         /// </summary>
         public static string SnippetHistory {
             get {
                 return ResourceManager.GetString("SnippetHistory", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Read Online Snippet.
+        /// </summary>
+        public static string SnippetOnline {
+            get {
+                return ResourceManager.GetString("SnippetOnline", resourceCulture);
             }
         }
         
@@ -553,24 +553,6 @@ namespace CodeHubDesktop.MultiLanguage.Language {
         public static string SubjectTitle {
             get {
                 return ResourceManager.GetString("SubjectTitle", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Your Snippets.
-        /// </summary>
-        public static string TabLocal {
-            get {
-                return ResourceManager.GetString("TabLocal", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Others Snippets.
-        /// </summary>
-        public static string TabOther {
-            get {
-                return ResourceManager.GetString("TabOther", resourceCulture);
             }
         }
         

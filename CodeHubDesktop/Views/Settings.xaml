@@ -10,7 +10,7 @@
     <hc:TransitioningContentControl>
         <StackPanel>
             <hc:Divider Content="{ext:Loc General}"/>
-            <ToggleButton Margin="10,0" x:Name="tg" Style="{StaticResource ToggleButtonSwitch}" Content="{ext:Loc SettingStoreSnippet}" IsChecked="{Binding GetIsCheckedToggle}" Command="{Binding StoreSnippetCommand}" CommandParameter="{Binding IsChecked, RelativeSource={RelativeSource Self}}" />
+            <ToggleButton HorizontalAlignment="Left" Margin="10,0" Style="{StaticResource ToggleButtonSwitch}" Content="{ext:Loc SettingStoreSnippet}" IsChecked="{Binding GetIsCheckedToggle}" Command="{Binding StoreSnippetCommand}" CommandParameter="{Binding IsChecked, RelativeSource={RelativeSource Self}}" />
             <hc:TextBox Margin="10,10" Text="{Binding APIUrlText, UpdateSourceTrigger=PropertyChanged}" hc:InfoElement.Placeholder="{ext:Loc APIUrl}" hc:TitleElement.Title="{ext:Loc APIUrlTitle}"/>
         </StackPanel>
     </hc:TransitioningContentControl>

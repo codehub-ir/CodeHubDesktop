@@ -217,9 +217,6 @@ Desktop Version Work with CodeHub API.</value>
   <data name="GithubOrg" xml:space="preserve">
     <value>CodeHub</value>
   </data>
-  <data name="HamburgerMenuHeaderItem" xml:space="preserve">
-    <value>Menu</value>
-  </data>
   <data name="HistoryDate" xml:space="preserve">
     <value>Publish Date</value>
   </data>
@@ -275,19 +272,16 @@ Desktop Version Work with CodeHub API.</value>
     <value>Link Copied to Clipborad</value>
   </data>
   <data name="SnippetHistory" xml:space="preserve">
-    <value>Snippet History</value>
+    <value>Stored Snippet</value>
+  </data>
+  <data name="SnippetOnline" xml:space="preserve">
+    <value>Read Online Snippet</value>
   </data>
   <data name="Subject" xml:space="preserve">
     <value>Subject...</value>
   </data>
   <data name="SubjectTitle" xml:space="preserve">
     <value>Snippet Title</value>
-  </data>
-  <data name="TabLocal" xml:space="preserve">
-    <value>Your Snippets</value>
-  </data>
-  <data name="TabOther" xml:space="preserve">
-    <value>Others Snippets</value>
   </data>
   <data name="Update" xml:space="preserve">
     <value>Update</value>

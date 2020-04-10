@@ -12,7 +12,7 @@
     <AssemblyVersion>1.0.1.0</AssemblyVersion>
     <LangVersion>latest</LangVersion>
     <SatelliteResourceLanguages>en;fa;en-US;fa-IR</SatelliteResourceLanguages>
-    <ApplicationIcon>gitbanner_6jm_icon.ico</ApplicationIcon>
+    <ApplicationIcon>Resources\gitbanner_6jm_icon.ico</ApplicationIcon>
     <Authors>Mahdi Hosseini</Authors>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -31,7 +31,6 @@
     <PackageReference Include="AvalonEdit" Version="6.0.1" />
     <PackageReference Include="HandyControls" Version="2.4.9.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.3" />
-    <PackageReference Include="ModernWpfUI.MahApps" Version="0.8.2-preview.1" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
     <PackageReference Include="Prism.DryIoc" Version="7.2.0.1422" />
   </ItemGroup>

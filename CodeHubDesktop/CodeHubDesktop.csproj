@@ -5,11 +5,11 @@
     <UseWPF>true</UseWPF>
     <AssemblyName>CodeHubDesktop</AssemblyName>
     <RootNamespace>CodeHubDesktop</RootNamespace>
-    <Version>1.1.0.0</Version>
+    <Version>1.2.0.0</Version>
     <Configurations>Debug;Release</Configurations>
     <Copyright>Copyright © Mahdi 2018-2020</Copyright>
-    <FileVersion>1.1.0.0</FileVersion>
-    <AssemblyVersion>1.1.0.0</AssemblyVersion>
+    <FileVersion>1.2.0.0</FileVersion>
+    <AssemblyVersion>1.2.0.0</AssemblyVersion>
     <LangVersion>latest</LangVersion>
     <SatelliteResourceLanguages>en;fa;en-US;fa-IR</SatelliteResourceLanguages>
     <ApplicationIcon>Resources\gitbanner_6jm_icon.ico</ApplicationIcon>
@@ -26,6 +26,10 @@
     <None Remove="Resources\Img\cloud.png" />
     <None Remove="Resources\Img\Flag\en.png" />
     <None Remove="Resources\Img\Flag\fa.png" />
+    <None Remove="Resources\LanguageList.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\LanguageList.txt" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="AvalonEdit" Version="6.0.1" />
@@ -59,11 +63,20 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Lang.resx</DependentUpon>
     </Compile>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Update="MultiLanguage\Language\Lang.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Lang.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
 </Project>

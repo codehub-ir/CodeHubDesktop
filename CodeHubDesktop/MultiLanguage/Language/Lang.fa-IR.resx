@@ -123,6 +123,9 @@
   <data name="AboutDec" xml:space="preserve">
     <value>کد هاب یک پلتفرم برای آرشیو کردن خطا ها، ایرادات و اسکریپت هایی هست که قصد دارید برای دیگران به اشتراک بذارید. نسخه دسکتاپ با کمک API های کدهاب کار می کند.</value>
   </data>
+  <data name="Admin" xml:space="preserve">
+    <value>پنل ادمین</value>
+  </data>
   <data name="AdminError" xml:space="preserve">
     <value>شما دسترسی لازم را ندارید لطفا برنامه را بصورت ادمین اجرا کنید یا پوشه برنامه را به محل دیگری (خارج از پوشه های سیستمی) منتقل کنید</value>
   </data>
@@ -228,6 +231,12 @@
   <data name="LatestVersion" xml:space="preserve">
     <value>شما از آخرین نسخه استفاده میکنید</value>
   </data>
+  <data name="Login" xml:space="preserve">
+    <value>ورود</value>
+  </data>
+  <data name="LoginToServer" xml:space="preserve">
+    <value>ورود به سرور</value>
+  </data>
   <data name="ModernStyle" xml:space="preserve">
     <value>استایل منوی مدرن</value>
   </data>
@@ -242,6 +251,9 @@
   </data>
   <data name="PaneTitle" xml:space="preserve">
     <value>کدهاب</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>رمز عبور</value>
   </data>
   <data name="Published" xml:space="preserve">
     <value>انتشار در</value>
@@ -284,6 +296,9 @@
   </data>
   <data name="Update" xml:space="preserve">
     <value>بروزرسانی</value>
+  </data>
+  <data name="Username" xml:space="preserve">
+    <value>نام کاربری</value>
   </data>
   <data name="Version" xml:space="preserve">
     <value>نسخه {0}</value>

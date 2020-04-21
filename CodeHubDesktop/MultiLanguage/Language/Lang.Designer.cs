@@ -80,6 +80,15 @@ namespace CodeHubDesktop.MultiLanguage.Language {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Admin Panel.
+        /// </summary>
+        public static string Admin {
+            get {
+                return ResourceManager.GetString("Admin", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to You dont have Permission, Please Run app as Administrator or change application directory to another drive.
         /// </summary>
         public static string AdminError {
@@ -395,6 +404,24 @@ namespace CodeHubDesktop.MultiLanguage.Language {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Login.
+        /// </summary>
+        public static string Login {
+            get {
+                return ResourceManager.GetString("Login", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Login to Server.
+        /// </summary>
+        public static string LoginToServer {
+            get {
+                return ResourceManager.GetString("LoginToServer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Modern Menu Style.
         /// </summary>
         public static string ModernStyle {
@@ -436,6 +463,15 @@ namespace CodeHubDesktop.MultiLanguage.Language {
         public static string PaneTitle {
             get {
                 return ResourceManager.GetString("PaneTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Password.
+        /// </summary>
+        public static string Password {
+            get {
+                return ResourceManager.GetString("Password", resourceCulture);
             }
         }
         
@@ -562,6 +598,15 @@ namespace CodeHubDesktop.MultiLanguage.Language {
         public static string Update {
             get {
                 return ResourceManager.GetString("Update", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Username.
+        /// </summary>
+        public static string Username {
+            get {
+                return ResourceManager.GetString("Username", resourceCulture);
             }
         }
         

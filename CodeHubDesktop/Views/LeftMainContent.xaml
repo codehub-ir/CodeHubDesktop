@@ -17,6 +17,7 @@
             <ListBoxItem Tag="CreateSnippet" Margin="10,15,10,0" Content="{ext:Loc CreateSnippet}"/>
             <ListBoxItem Tag="SnippetOnline" Margin="10,5,10,0" Content="{ext:Loc SnippetOnline}"/>
             <ListBoxItem Tag="SnippetHistory" Margin="10,5,10,0" Content="{ext:Loc SnippetHistory}"/>
+            <ListBoxItem Tag="Admin" Margin="10,5,10,0" Content="{ext:Loc Admin}"/>
             <ListBoxItem Tag="CheckUpdate" Margin="10,5,10,0" Content="{ext:Loc Update}"/>
             <ListBoxItem Tag="About" Margin="10,5,10,0" Content="{ext:Loc About}"/>
             <ListBoxItem Tag="Settings" Margin="10,5,10,0" Content="{ext:Loc Settings}"/>

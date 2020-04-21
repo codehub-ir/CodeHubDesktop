@@ -42,7 +42,7 @@ namespace CodeHubDesktop
             containerRegistry.RegisterForNavigation<CreateSnippet>();
             containerRegistry.RegisterForNavigation<SnippetHistory>();
             containerRegistry.RegisterForNavigation<SnippetOnline>();
-            containerRegistry.RegisterForNavigation<LeftMainContent>();
+            containerRegistry.RegisterForNavigation<Admin>();
         }
         internal void UpdateSkin(SkinType skin)
         {

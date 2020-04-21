@@ -124,6 +124,9 @@
     <value>CodeHub is a platform for archiving the errors, bugs, and scripts you intend to share with others. 
 Desktop Version Work with CodeHub API.</value>
   </data>
+  <data name="Admin" xml:space="preserve">
+    <value>Admin Panel</value>
+  </data>
   <data name="AdminError" xml:space="preserve">
     <value>You dont have Permission, Please Run app as Administrator or change application directory to another drive</value>
   </data>
@@ -229,6 +232,12 @@ Desktop Version Work with CodeHub API.</value>
   <data name="LatestVersion" xml:space="preserve">
     <value>You are using Latest Version</value>
   </data>
+  <data name="Login" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="LoginToServer" xml:space="preserve">
+    <value>Login to Server</value>
+  </data>
   <data name="ModernStyle" xml:space="preserve">
     <value>Modern Menu Style</value>
   </data>
@@ -243,6 +252,9 @@ Desktop Version Work with CodeHub API.</value>
   </data>
   <data name="PaneTitle" xml:space="preserve">
     <value>Code Hub</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Password</value>
   </data>
   <data name="Published" xml:space="preserve">
     <value>Published at</value>
@@ -285,6 +297,9 @@ Desktop Version Work with CodeHub API.</value>
   </data>
   <data name="Update" xml:space="preserve">
     <value>Update</value>
+  </data>
+  <data name="Username" xml:space="preserve">
+    <value>Username</value>
   </data>
   <data name="Version" xml:space="preserve">
     <value>Version {0}</value>
